@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>我的照片地图</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 引入 Leaflet CSS 文件。路径是相对于当前 HTML 文件的。 -->
+    <link rel="stylesheet" href="./leaflet/leaflet.css" />
+
+    <style>
+        /* 设置地图容器的样式 */
+        #map {
+            height: 800px; /* 地图的高度，根据需要调整 */
+            width: 100%;  /* 地图的宽度 */
+            /* 可以添加 margin, border 等其他样式 */
+        }
+        /* 设置弹窗中图片的最大尺寸，防止过大 */
+        .popup-image {
+            max-width: 250px; /* 图片最大宽度，根据需要调整 */
+            height: auto;     /* 保持图片的高宽比 */
+            display: block;   /* 让图片作为块级元素，方便居中 */
+            margin: 0 auto;   /* 图片居中显示 */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 地图将显示在这个 div 元素中 -->
+    <div id="map"></div>
+
+    <!-- 引入 Leaflet JS 文件。路径是相对于当前 HTML 文件的。 -->
+    <script src="./leaflet/leaflet.js"></script>
+    <!-- 引入你的地图脚本文件，这个脚本将包含地图的初始化和数据加载逻辑 -->
+    <script src="./map_script.js"></script>
+
+</body>
+</html>
